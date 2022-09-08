@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Student Records</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function addNewRow() {
+            var RollNo = document.getElementById("RollNo").value;
+            var StudentName = document.getElementById("StudentName").value;
+            var mainTable = document.getElementById("main-table");
+            var newRow = document.createElement("tr");
+            newRow.innerHTML = "<tr><td>" + RollNo + "</td><td>" + StudentName + "</td></tr>"
+            mainTable.appendChild(newRow);
+        }
+    </script>
+</head>
+<body>
+    <h1>Student Records</h1>
+    <div>
+        <input type="text" id="RollNo" class="SR-input">
+            <input type="text" id="StudentName" class="SR-input">
+            <button onclick="addNewRow()" value="Get Value">Add New</button>
+    </div>
+    <div>
+        <table id="main-table">
+            <thead>
+                <tr>
+                    <td>Roll No.</td>
+                    <td>Student Name</td>
+                </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
