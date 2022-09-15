@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Team Form</title>
+    <link href="app.css" rel="stylesheet">
+    <script src="main.js"></script>
+</head>
+<body>
+    <div id="heading"><h1>Team Form</h1></div>
+    <div class="inputs">
+        <label for="Manager-Name">Manager Name</label>
+        <input type="text" id="Manager-Name">
+    </div>
+    <div class="inputs">
+        <label for="Group-Email">Group Email</label>
+        <input type="text" id="Group-Email">
+    </div>
+    <div class="inputs">
+        <label for="Server-Username">Server Username</label>
+        <input type="text" id="Server-Username">
+    </div>
+    <div class="inputs">
+        <label for="Server-Password">Server Password</label>
+        <input type="password" id="Server-Password">
+    </div>
+    <div class="inputs">
+        <label for="Confirm-Password">Confirm Password</label>
+        <input type="password" id="Confirm-Password">
+    </div>
+    <div class="inputs">
+        <label for="Team-Lead">Team Lead</label>
+        <select id="Team-Lead">
+            <option>Tony</option>
+            <option>Steve</option>
+            <option>Bruce</option>
+            <option>Clint</option>
+            <option>Thor</option>
+            <option>Natasha</option>
+        </select>
+    </div>
+    <div class="inputs">
+        <label for="Team-Members">Team Members</label>
+        <div id="Team-Members-outer-box">
+            <div class="Team-Members-source"
+                ondragover="dragoverHandler(event)"
+                ondrop="dropHandler(event)">
+                <p draggable="true" id="Tony" ondragstart="dragstartHandler(event)">Tony</p>
+                <p draggable="true" id="Steve">Steve</p>
+                <p draggable="true" id="Bruce">Bruce</p>
+                <p draggable="true" id="Clint">Clint</p>
+                <p draggable="true" id="Thor">Thor</p>
+                <p draggable="true" id="Natasha">Natasha</p>
+            </div>
+            <div class="Team-Members-target"
+                ondragover="dragoverHandler(event)"
+                ondrop="dropHandler(event)">
+            </div>
+        </div>
+    </div>
+    <div>
+        <button>Submit</button>
+    <div>
+</body>
+</html>

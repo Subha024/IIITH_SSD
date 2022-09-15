@@ -1,0 +1,35 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+#heading {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 600px;
+}
+
+.Team-Members-source {
+    width: 200px;
+    height: 200px;
+    border: 1px solid;
+}
+
+.Team-Members-target {
+    width: 200px;
+    height: 200px;
+    border: 1px solid;
+}
+
+#Team-Members-outer-box {
+    display: flex;
+    flex-direction: row;
+}
