@@ -1,0 +1,1 @@
+1. function filterStocks() prints the outputs for Q(iv) directly in the output file with heading
